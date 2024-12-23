@@ -10,17 +10,17 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
-			arr = arr.map(Numbers);
+			arr = arr.map(Number);
 
-			const uniqueArr = [... new set(arr)]; 
+			const uniqueArr = [... new Set(arr)]; 
 
 			if(uniqueArr.length<2){
-				return  -infinity ;  
+				return  -Infinity ;  
 			}
 
-			const SortedArr = uniqueArr.sort( (a,b) => b - a ); 
+			uniqueArr.sort( (a,b) => b - a ); 
 			
-			return SortedArr[1];  
+			return uniqueArr[1];  
 			
 		}
 
